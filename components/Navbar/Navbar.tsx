@@ -45,6 +45,7 @@ import Link from '../Link/Link'
 import SearchInput from '../SearchInput'
 import Select from '../Select/Select'
 import AccountImage from '../Wallet/Image'
+import Image from 'next/image'
 
 type MultiLang = {
   pathname: string
@@ -121,7 +122,7 @@ const DrawerMenu: FC<{
           <DrawerCloseButton />
           <DrawerHeader>
             <Link href="/" onClick={onClose}>
-              <img
+              <Image
                 src={LOGO}
                 alt={META_COMPANY_NAME}
                 style={{ height: '32px' }}
@@ -422,7 +423,7 @@ const Navbar: FC<{
       <Flex mx="auto" h={16} gap={6} px={{ base: 6, lg: 8 }} maxW="7xl">
         <Flex align="center">
           <Flex as={Link} href="/">
-            <img
+            <Image
               src={LOGO}
               alt={META_COMPANY_NAME}
               style={{ height: '32px' }}
