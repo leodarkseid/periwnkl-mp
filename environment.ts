@@ -188,9 +188,12 @@ const getEnvironment = async (): Promise<Environment> => {
     MAX_ROYALTIES: maxRoyaltiesPerTenThousand / 100,
     BUGSNAG_API_KEY: process.env.NEXT_PUBLIC_BUGSNAG_API_KEY,
     // Theme configuration
-    LOGO: metadata.LOGO || '/logo.svg',
-    FAVICON: metadata.FAVICON || '/favicon.svg',
-    BRAND_COLOR: metadata.BRAND_COLOR || '#245BFF',
+    LOGO: '/logoText.png',
+    // metadata.LOGO ||
+    FAVICON: '/favicon.svg',
+    // metadata.FAVICON || 
+    BRAND_COLOR: '#245BFF',
+    // metadata.BRAND_COLOR ||
     // Wallet/chain configuration
     CHAINS: [
       ethereumMainnet,
